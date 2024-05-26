@@ -103,6 +103,8 @@ function M.setup(opts)
             table.insert(configs, config)
         end
     end
+    dap.configurations.ps1 = dap.configurations.PowerShell
+    dap.configurations.psm1 = dap.configurations.PowerShell
 end
 
 return M

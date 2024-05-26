@@ -42,15 +42,7 @@ An extension for [nvim-dap][1] providing default configurations for powershell. 
 ### Powershell launch.json
 
 Launch.json refers to powershell as type = PowerShell, but nvim-dap refers to the filetype, default = ps1.
-To make the standard launch.json work it is recommended to set powershell filetype as PowerShell.
-
-This is done by:
-- Create file in your nvim directory: ftdetect/PowerShell.vim
-- Set content to:
-``` vim
-au BufRead,BufNewFile *.ps1 set filetype=PowerShell
-au BufRead,BufNewFile *.psm1 set filetype=PowerShell
-```
+Dap configurations are expected to be set for PowerShell, and will then work for PowerShell, ps1, psm1 filetypes.
 
 ### Repl content color correction
 
